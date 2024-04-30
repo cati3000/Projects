@@ -1,0 +1,50 @@
+* {
+          box-sizing: border-box; 
+        }
+
+        .row {
+          display: flex;
+        }
+
+/*         meniu */
+        .left {
+          flex: 35%;
+          padding: 15px 0;
+        }
+
+        .left h2 {
+          padding-left: 8px;
+        }
+
+        /* continut */
+        .right {
+          flex: 65%;
+          padding: 15px;
+        }
+
+        #mySearch {
+          width: 100%;
+          font-size: 18px;
+          padding: 11px;
+          border: 1px solid #ddd;
+            border-radius: 10px;
+            
+        }
+
+        #myMenu {
+         list-style-type: none;
+          padding: 0;
+          margin: 0;   
+            font-family: "times new roman", serif;
+            font-size: 18px;      
+        }
+
+        #myMenu li a {
+          padding: 12px;
+          text-decoration: none;
+          color: white;
+          display: block;
+            margin: 2px;
+        }
+
+       

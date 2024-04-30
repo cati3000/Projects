@@ -1,0 +1,393 @@
+table { 
+/*                border-collapse: collapse; */
+            } 
+            
+        
+            .geeks { 
+                border-right:hidden; 
+                background-color: transparent;
+                height: 240px;
+            } 
+        .geeks1 { 
+                border-right:hidden; 
+                background-color: dimgrey;
+                height: 100px;
+            }     
+        
+            .gfg { 
+                border-collapse:separate; 
+                border-spacing:25px 0; 
+            }  
+            td{
+                width: 280px;
+            }
+
+
+
+
+
+<!--             
+              <center> <table class = "gfg">
+                  <tr class = "geeks">
+                      <td > <img id="imagg" src="bere1.jpg"></td>
+                      <td > <img id="imagg" src="horni.png"></td>
+                      <td > <img id="imagg" src="ciupuk.png"></td>
+                  </tr>
+                   <tr class = "geeks1">
+                       <td  valign="top"> <center><h2 id="c">bere hainechen</h2><h2><s style="color:red;">4.00 RON </s>3.50 RON</h2> <button id="buton"><b>ADAUGA IN COS</b></button></center></td>
+                     <td valign="top"> <center><h2>cîne</h2><h2><s style="color:red;">65.00 RON </s>0.50 RON</h2> <button id="buton"><b>ADAUGA IN COS</b></button></center></td>
+                      <td valign="top"> <center><h2>ciu-puk</h2><h2><s style="color:red;">100.00 RON </s>99.50 RON</h2> <button id="buton"><b>ADAUGA IN COS</b></button></center></td>
+                  </tr>
+                  </table></center>
+              <br>
+              <br>
+              <center> <table class = "gfg">
+                  <tr class = "geeks">
+                      <td > <img id="imagg" src="vodka.jpg"></td>
+                      <td > <img id="imagg" src="dragonu.jpg"></td>
+                      <td > <img id="imagg" src="cunevasta.png"></td>
+                  </tr>
+                   <tr class = "geeks1">
+                       <td valign="top"> <center><h2>cîne votca</h2><h2><s style="color:red;">12.00 RON </s>5.50 RON</h2> <button id="buton"><b>ADAUGA IN COS</b></button></center></td>
+                     <td valign="top"> <center><h2>vand dinti</h2><h2><s style="color:red;">14.00 RON </s>0.50 RON</h2> <button id="buton"><b>ADAUGA IN COS</b></button></center></td>
+                      <td valign="top"> <center><h2>Micu si Mika</h2><h2>ne iubim invidiosilor</h2> <button id="buton"><b>ADAUGA IN PAT</b></button></center></td>
+                  </tr>
+                  </table></center>     -->
+
+
+
+
+<!--             
+              <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="turbina1.png" style=" width: 100%;height: 450px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="turbina2.jpg" style=" width:100%;height: 450px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="turbina3.jpg" style="width:100%;height: 450px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="turbina4.jpg" style="width:100%;height: 450px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="intercular1.jpg" style="width:100%; height: 450px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="intercular2.jpg" style="width:100%; height: 450px;">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="turbina1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="turbina2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="turbina3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="turbina4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="intercular1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                </div>    
+                <div class="column">
+                  <img class="demo cursor" src="intercular2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
+              </div>
+            </div>       -->
+
+
+
+
+<script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+<center><h1 style="color: white;">Turbine:</h1></center>
+              <center>
+            <table border="1px" padding="0px">
+                <tr>
+                    <td id="formatare_col_unu"> <img src="turbina1.png" class="form"> </td>
+                    <td id="formatare_col_doi"><h3><a style="color: white; text-decoration:none; padding-left:20px;" href="aux1_1.php"> Turbina Garrett 80mm Cu Rulmenti Ceramici </a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 2999.99 RON   </h2> </td>
+                </tr>
+               <tr>
+                    <td  id="formatare_col_unu"><img src="turbina2.jpg" class="form"></td>
+                   <td id="formatare_col_doi"><h3><a style="color: white; text-decoration:none; padding-left:20px; " href="aux1_2.php"> Turbina ProTuning P1 65mm Carcasa Magneziu a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 1749.99 RON</h2> </td>
+                </tr>
+                <tr>
+                    <td id="formatare_col_unu"><img src="turbina3.jpg" class="form"></td>
+                    <td id="formatare_col_doi"><h3 ><a style="color: white; text-decoration:none; padding-left:20px; " href="aux1_3.php">Turbina ProTuning P2 72mm Cu Rulmenti Ceramici
+</a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 1999.99 RON</h2> </td>
+                </tr>
+                <tr>
+                    <td id="formatare_col_unu"><img src="turbina4.jpg" class="form"></td>
+                    <td id="formatare_col_doi"><h3 ><a style="color: white; text-decoration:none; padding-left:20px; " href="aux1_4.php">Turbina ProTuning P3 78mm Cu Rulmenti Ceramici</a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 2499.99 RON</h2> </td>
+                </tr>
+                  </table></center>
+              <center><h1 style="color: white;">Intercoolere:</h1></center>
+              <center>
+            <table border="1px" padding="0px">
+                <tr>
+                    <td id="formatare_col_unu"> <img src="intercular1.jpg" class="form"> </td>
+                    <td id="formatare_col_doi"><h3><a style="color: white; text-decoration:none; padding-left:20px;" href="aux1_5.php"> Intercooler ColdTech IN/OUT 50mm </a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 439.99 RON   </h2> </td>
+                </tr>
+               <tr>
+                    <td  id="formatare_col_unu"><img src="intercular3.jpg" class="form"></td>
+                   <td id="formatare_col_doi"><h3><a style="color: white; text-decoration:none; padding-left:20px; " href="aux1_6.php"> Intercooler ProTuning IN/OUT 45mm</a></h3> <br> <h2 style="color:#00ccff; padding-left:20px";> 399.99 RON</h2> </td>
+                </tr>
+                  </table></center>
+
+
+INSERT INTO produse(denumire, descriere, categorie, imagine) VALUES ("Turbina Garrett 80mm Cu Rulmenti Ceramici", "huagsvdufgiasdfiag ajihas asdc modific dupa", 1, LOAD_FILE('C:xampp/htdocs/atestat/turbina1.jpeg'));
+
+
+
+//              $sql = "SELECT id_prod, denumire, descriere, imagine, pret FROM produse";
+//            $result = $conn->query($sql);
+              for($i=1; $i<= $total_nr_products; ++$i)
+              {
+                  
+                  if($row = $result->fetch_assoc())
+                  {
+                      $v[$i]=$row['id_prod'];
+                      /*echo $v[$i];
+                      echo"  ";
+                      echo $row['denumire'];
+                      echo"<br>";*/
+                      $id=$row['imagine'];
+                          ?>
+                            <center><table style="border:2px solid black;" >
+                          <tr>
+                                <td id="formatare_col_unu"><img style="width:200px; height:200px" src="<?php echo $id?>"></td>
+                              <td id="formatare_col_doi"> <h3 style="padding-left:20px; color:white"><?php echo $row['denumire']?></h3> <h2 style="color:white; padding-left:20px "><?php echo $row['pret'] ?> RON</h2> </td>
+                            
+                          </tr>
+                          </table></center>
+              
+                       
+                            <hr style="border:1px solid white; width:100%;">
+
+                          <?php
+                  }
+              }
+
+
+
+$sql = "SELECT id_prod, denumire, descriere, imagine, pret FROM produse";
+                $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0)
+                    {
+                      // output data of each row
+                      while($row = $result->fetch_assoc())
+                      {
+                           $id=$row['imagine'];
+                          ?>
+                            <center><table style="border:2px solid black;" >
+                          <tr>
+                                <td id="formatare_col_unu"><img style="width:200px; height:200px" src="<?php echo $id?>"></td>
+                              <td id="formatare_col_doi"> <h3 style="padding-left:20px; color:white"><?php echo $row['denumire']?></h3> <h2 style="color:white; padding-left:20px "><?php echo $row['pret'] ?> RON</h2>
+                                  <button id="alo">Vezi Detalii >></button>
+                              
+                              </td>
+                              
+                          </tr>
+                          </table></center>
+              
+                       
+                            <hr style="border:1px solid white; width:100%;">
+                          <?php
+                      }
+                    }
+
+
+				                    <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                  <option>6</option>
+                                  <option>7</option>
+                                  <option>8</option>
+                                  <option>9</option>
+                                  <option>10</option>
+                                  
+                                  
+                                  
+                                  
+                                  
+                                   <form method="post"> <select name="cantitate">
+                                    <?php
+                                    $n=$array['stoc'];
+                                    for($i=1; $i<=$n; $i++)
+                                      echo "<option>$i</option>";
+                                    echo"<input type='submit' name='go' value='go'> ";
+                
+                                    if(isset($_POST['go']))
+                                    {
+                                        $a=$_POST['cantitate'];
+                                        echo "$a";
+                                    }
+//                                        $v[$k]=$_POST['cantitate'];
+                                    ?>
+                                     </select>  </form>    
+                                     
+                                     
+                                     
+                                     
+                                     
+                                     <?php
+              
+            if(isset($_POST['go']))
+            {
+                   for($i=1; $i<=$k; $i++)
+                   {
+                       $a='cantitate'.$i;
+//                       echo "$a"."<br>";
+                       
+                       $v[$i]=$_POST['cantitate1'];
+                      echo "$v[$i] ";
+                   }
+                  
+            }
+              
+              
+              ?>
+              
+              
+              $can_delete=false;
+              for($i=0; $i<=$k; $i++)
+              {
+                    $a=$_POST["delete$i"];
+                  if(isset($a))
+                  { $can_delete=true; break;}
+              } 
+              if($can_delete==true)
+              {
+                  echo "pot sterge produsul cu id-ul $a";
+                   $sql="DELETE from cos WHERE (id_produs='$a' and id_user='$id_user')";
+                    $result=$conn->query($sql);
+//                     echo "<meta http-equiv='refresh' content='0'>";/// auto-refresh
+              }
+              
+              
+              
+              
+              
+              
+              
+              <form>
+                 <table>
+                     <tr> <td><strong> Usermane:</strong> <input type="text" name="u"> </td>  </tr>
+                     <tr> <td><strong> Parola:</strong> <input type="password" name="p"> </td>  </tr>
+                     <tr> <td><strong> Continut:</strong> <textarea></textarea> </td>  </tr>
+                      <tr>
+                        <td colspan="2" align="center"><input id="alo"  type="submit" name="trimk" value="Trimite"> <input id="alo" type="reset" name="res" value="Renunta"> </td>
+                        
+                    </tr>
+                 </table>
+             </form>
+              
+              
+              <?php
+            
+            $sql="select id_comanda,nume_client,nume_produs,cantitate,pret,data_comanda from tabela_comenzi";
+            $result = $conn->query($sql);
+            foreach ($result as $index => $array)   
+            {
+                
+            }
+            ?>
+              
+              
+              
+              
+              
+              
+              $sql="select id_comanda, nume_client, pret, nume_produs, cantitate, data_comanda from tabela_comenzi where id_comanda='$id'";
+                $result = $conn->query($sql);
+                  ?>
+              <center><table style='width:1050px; border:1px solid white; color:white' border='2px' bordercolor='white'> 
+              <?php
+                  
+//                 echo "<center><table style='width:150px; border:1px solid white' border='2px' bordercolor='white'> ";
+                foreach ($result as $index => $array)   
+                {
+                    echo "<tr style='height:100px'>";
+                    $user=$array['nume_client'];
+                    $prod=$array['nume_produs'];
+                    $cantitate=$array['cantitate'];
+                    $pret=$array['pret'];
+                    $date=$array['data_comanda'];
+                    ?>
+                  <td><center><?php echo $user?></center></td>
+                  <td><center><?php echo $prod?></center></td>
+                  <td><center><?php echo $cantitate?></center></td>
+                  <td><center><?php echo $pret?></center></td>
+                  <td><center><?php echo $date?></center></td>
+                    <?php
+                    echo "</tr>";
+                }
+                 echo "</table></center>";
+                  
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              

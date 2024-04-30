@@ -1,0 +1,39 @@
+#da{
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+#ped{
+    border-collapse: collapse;
+}
+
+p{ padding: 10px;  text-align: justify;}
+
+#rcorners1 {
+  border-radius: 10px;
+  
+  padding: 20px; 
+/*  width: 420px;*/
+  height: 60px; 
+  text-align:center;
+  font-size:15px;
+    
+
+}
+#buton {
+  border-radius: 25px;
+  border: 3px solid white;
+  padding: 14px 16px;
+  height: 60px; 
+  text-align:center;
+  font-size:15px;
+  padding: 14px 16px;
+    
+}
+#buton:hover{
+    background-color: #225200;
+}
